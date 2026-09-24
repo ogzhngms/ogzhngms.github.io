@@ -9,6 +9,10 @@
 <meta property="og:description" content="3+ years testing the Enuygun iOS and Android apps. Now building native Android apps with Kotlin and Jetpack Compose.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://ogzhngms.github.io/">
+<meta property="og:image" content="https://ogzhngms.github.io/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -60,6 +64,8 @@
   .skills { display: grid; grid-template-columns: 170px 1fr; gap: 8px 16px; margin: 0; }
   .skills dt { font-weight: 600; font-size: 0.95rem; }
   .skills dd { margin: 0; color: var(--text); }
+  .shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 540px; margin-top: 14px; }
+  .shots img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--line); }
   .writing { list-style: none; padding: 0; margin: 0; }
   .writing li { margin-bottom: 10px; }
   .writing .tr { color: var(--muted); font-size: 0.9rem; display: block; }
@@ -147,6 +153,11 @@
         <li>Optional Google sign-in (Credential Manager) with Firebase Auth and Firestore cloud backup. Works offline, with no ads or analytics.</li>
         <li>Unit tests and Compose UI tests. Took the release through Google Play's closed-testing track: signing, testers and review.</li>
       </ul>
+      <div class="shots web-only">
+        <img src="img/sutakibi-01-dark.png" width="540" height="960" loading="lazy" alt="Sutakibi home screen in the dark theme: a glass filled to 1000 of 2000 ml, vessel choices and amount buttons">
+        <img src="img/sutakibi-03-bottle.png" width="540" height="960" loading="lazy" alt="Sutakibi in the light theme with the bottle vessel selected">
+        <img src="img/sutakibi-04-backup.png" width="540" height="960" loading="lazy" alt="Sutakibi cloud backup sheet with Google sign-in">
+      </div>
       <p class="sub web-only"><a href="https://groups.google.com/g/sutakibi-testers">Join the closed test →</a></p>
     </div>
   </section>
