@@ -80,16 +80,17 @@
   @page { size: A4; margin: 12mm 14mm; }
   @media print {
     :root { --bg: #fff; --text: #1f2328; --muted: #57606a; --line: #d0d7de; --accent: #0f766e; --accent-soft: #e6f4f1; }
-    html { font-size: 12.4px; }
+    html { font-size: 12.2px; }
     body { font-size: 1rem; line-height: 1.38; }
     main { max-width: none; padding: 0; }
     h1 { font-size: 1.9rem; }
     .role { font-size: 1.1rem; margin: 2px 0; }
     .links { margin-top: 4px; }
     .web-only, footer { display: none !important; }
-    section { margin-top: 11px; }
+    .writing .tr { display: none; }
+    section { margin-top: 8px; }
     h2 { margin-bottom: 6px; padding-bottom: 3px; }
-    .item { margin-bottom: 7px; break-inside: avoid; }
+    .item { margin-bottom: 6px; break-inside: avoid; }
     ul.bullets { margin-top: 2px; }
     ul.bullets li { margin: 1px 0; }
     .sub { margin: 1px 0 2px; }
@@ -117,7 +118,7 @@
 
   <section id="summary">
     <h2>Summary</h2>
-    <p>QA engineer with 3+ years of experience in manual and automated testing of mobile and web applications. At Wingie Enuygun Group I tested the Enuygun iOS and Android apps, migrated the test automation framework from Java + TestNG to Gauge, and grew from QA intern to Mid QA Engineer. I work with Appium, Selenium, Gauge, Java and Python, and build test strategies around BDD and TDD. I am now building native Android apps with Kotlin and Jetpack Compose: my first app, Sutakibi, is in closed testing on Google Play. I have also built a mobile app with React Native.</p>
+    <p>QA engineer with 3+ years of experience in manual and automated testing of mobile and web applications. At Wingie Enuygun Group I tested the Enuygun iOS and Android apps, migrated the test automation framework from Java + TestNG to Gauge, and grew from QA intern to Mid QA Engineer. I work with Appium, Selenium, Gauge, Java and Python, and build test strategies around BDD and TDD. I am now building native Android apps with Kotlin and Jetpack Compose: my first app, Sutakibi, is in closed testing on Google Play<span class="web-only">, and SorGez, an open-source AI trip planner built on the Gemini API, is in development</span>. I have also built a mobile app with React Native.</p>
   </section>
 
   <section id="experience">
@@ -160,6 +161,21 @@
       </div>
       <p class="sub web-only"><a href="https://groups.google.com/g/sutakibi-testers">Join the closed test →</a></p>
     </div>
+    <div class="item">
+      <div class="item-head"><h3>SorGez · AI trip planner for Android <span class="tag">Open source · in development</span></h3><span class="when">2026</span></div>
+      <p class="sub">Kotlin · Jetpack Compose · Gemini API · Firebase · AGSL</p>
+      <ul class="bullets">
+        <li>Gemini turns six answers into a schema-bound JSON trip plan, with a silent eight-model fallback.</li>
+        <li class="web-only">Distinct errors for no network, a wrong key, a refusal and a cut-off plan; a model that is too slow counts as busy, so the next one is tried.</li>
+        <li class="web-only">Unit tests against a local fake of the Gemini API, schema tests and Compose UI tests, run on every push by GitHub Actions. 15 languages, including Arabic right to left.</li>
+      </ul>
+      <div class="shots web-only">
+        <img src="img/sorgez-01-home.jpg" width="450" height="1000" loading="lazy" alt="SorGez home screen: a photographic Earth turning over dashed flight routes, with a Start button at its centre">
+        <img src="img/sorgez-02-pin.jpg" width="450" height="1000" loading="lazy" alt="SorGez destination step: the Earth has turned to Cappadocia and a green pin marks the place">
+        <img src="img/sorgez-03-plan.jpg" width="450" height="1000" loading="lazy" alt="A three-day Rome plan in SorGez: day titles, times, activities and estimated costs">
+      </div>
+      <p class="sub web-only"><a href="https://github.com/ogzhngms/sorgez-android">Source on GitHub →</a></p>
+    </div>
   </section>
 
   <section id="skills">
@@ -180,6 +196,7 @@
       <li><a href="https://medium.com/@oguzhan.gumus.0808/google-playde-ilk-uygulama-12-test-kullan%C4%B1c%C4%B1s%C4%B1-14-g%C3%BCn-ve-kapal%C4%B1-test-cadecc5f71c2">First app on Google Play: 12 testers, 14 days and closed testing</a><span class="tr">Google Play'de ilk uygulama: 12 test kullanıcısı, 14 gün ve kapalı test · Medium, in Turkish</span></li>
       <li><a href="https://medium.com/@oguzhan.gumus.0808/play-storea-s%C3%BCr%C3%BCm-g%C3%B6ndermeden-%C3%B6nce-do%C4%9Fruland%C4%B1-demeden-8-kontrol-052517db65a3">Before you ship to the Play Store: 8 checks before saying "verified"</a><span class="tr">Play Store'a sürüm göndermeden önce: "doğrulandı" demeden 8 kontrol · Medium, in Turkish</span></li>
       <li><a href="https://medium.com/p/be69ee0b8445">Getting started with Appium: Android and iOS setup guide (2026)</a><span class="tr">Appium ile Mobil Test Otomasyonuna Başlangıç: Android ve iOS Kurulum Rehberi · Medium, in Turkish</span></li>
+      <li><a href="https://medium.com/@oguzhan.gumus.0808/yapay-zek%C3%A2ya-g%C3%BCvenmeden-test-etmek-geminiden-%C5%9Femaya-uyan-json-ve-8-modellik-sessiz-yedekleme-c9bd16a1780b">Testing without trusting the AI: schema-bound JSON from Gemini and a silent fallback across eight models</a><span class="tr">Yapay zekâya güvenmeden test etmek: Gemini'den şemaya uyan JSON ve 8 modellik sessiz yedekleme · Medium, in Turkish</span></li>
     </ul>
   </section>
 
