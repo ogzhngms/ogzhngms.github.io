@@ -15,21 +15,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+  /* Screen palette: the same tokens as the share cards (cv/card.html). Print sets its own light palette below. */
   :root {
-    --bg: #ffffff; --text: #1f2328; --muted: #57606a; --line: #d8dee4;
-    --accent: #0f766e; --accent-soft: #e6f4f1; --chip: #f3f5f7;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0d1117; --text: #e6edf3; --muted: #9da7b3; --line: #30363d;
-      --accent: #5eead4; --accent-soft: #10302c; --chip: #161b22;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0d1117; --text: #e6edf3; --muted: #9da7b3; --line: #30363d;
-    --accent: #5eead4; --accent-soft: #10302c; --chip: #161b22;
+    color-scheme: dark;
+    --bg: #0d1117; --surface: #15212b; --text: #f0f6fc; --muted: #a8b6c5; --faint: #758597; --line: #25313c;
+    --accent: #3ddc84; --accent-soft: rgba(61, 220, 132, 0.12); --chip: #15212b;
   }
   * { box-sizing: border-box; }
   body {
@@ -77,6 +69,34 @@
     .skills { grid-template-columns: 1fr; gap: 2px; }
     .skills dd { margin-bottom: 10px; }
   }
+  @media screen {
+    header { position: relative; display: flex; flex-direction: column; padding-left: 26px; }
+    header::before { content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 6px; border-radius: 3px; background: var(--accent); }
+    header .role { order: -1; margin: 0 0 12px; color: var(--accent); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+    h1 { font-size: 2.9rem; font-weight: 800; }
+    .meta { margin-top: 10px; }
+    .links a { color: var(--muted); }
+    .links a:hover { color: var(--accent); }
+    .btn { align-self: flex-start; border-radius: 10px; font-weight: 700; color: #0d1117; }
+    h2 { font-weight: 700; letter-spacing: 0.16em; font-size: 0.82rem; }
+    #summary p { color: var(--muted); }
+    .item { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+    .item:last-child { margin-bottom: 0; }
+    .item-head h3 { font-weight: 700; }
+    .when, .sub { color: var(--faint); }
+    ul.bullets li { color: var(--muted); }
+    ul.bullets li::marker { color: var(--accent); }
+    .shots img { border: 2px solid var(--accent); border-radius: 22px; padding: 5px; background: var(--bg); }
+    .skills dt { color: var(--text); }
+    .skills dd { color: var(--muted); }
+    .writing li { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px 14px 26px; }
+    .writing li::before { content: ""; position: absolute; left: 12px; top: 14px; bottom: 14px; width: 4px; border-radius: 2px; background: var(--accent); }
+    .writing li a { color: var(--text); font-weight: 600; }
+    .writing li a:hover { color: var(--accent); text-decoration: none; }
+    .writing .tr { color: var(--faint); margin-top: 2px; }
+    #education .item + .sub { margin-top: 10px; }
+    footer { color: var(--faint); }
+  }
   @page { size: A4; margin: 12mm 14mm; }
   @media print {
     :root { --bg: #fff; --text: #1f2328; --muted: #57606a; --line: #d0d7de; --accent: #0f766e; --accent-soft: #e6f4f1; }
@@ -104,7 +124,7 @@
 <main>
   <header>
     <h1>Oğuzhan Gümüş</h1>
-    <p class="role">Mobile QA Engineer · Android Developer</p>
+    <p class="role" lang="en">Mobile QA Engineer · Android Developer</p>
     <p class="meta">Istanbul, Türkiye · Open to Mobile QA, Test Automation and Android roles</p>
     <ul class="links">
       <li><a href="mailto:oguzhan.gumus.0808@gmail.com">oguzhan.gumus.0808@gmail.com</a></li>
