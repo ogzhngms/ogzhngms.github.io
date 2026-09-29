@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SorGez Gizlilik Politikası · Ogitech Studio</title>
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --fg: #1a1f26; --muted: #5b6573; --accent: #1f9d5b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9aa5b1; --accent: #3ddc84; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; } h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  p, li { color: var(--fg); } .meta { color: var(--muted); } a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--muted); opacity: .3; margin: 40px 0; }
+  nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
+
+<section id="tr" lang="tr">
+<h1>SorGez gizlilik politikası</h1>
+<p class="meta">SorGez · Ogitech Studio · Son güncelleme: 29 Eylül 2026</p>
+
+<h2>Kim sorumlu?</h2>
+<p>SorGez'in geliştiricisi Ogitech Studio'dur (Oğuzhan Gümüş). Gizlilikle ilgili sorular ve silme talepleri için: <a href="mailto:oguzhan.gumus.0808@gmail.com">oguzhan.gumus.0808@gmail.com</a>.</p>
+
+<h2>Gezi planı için verdiğin cevaplar</h2>
+<p>Plan oluşturmak için gideceğin yer, gün sayısı, isteğe bağlı gidiş ayı, kiminle gittiğin, bütçe tercihi, ilgi alanları ve not kutusuna yazdıkların, dil ve para birimi tercihinle birlikte Google'ın Gemini modeline (Firebase AI Logic üzerinden) gönderilir. Amaç yalnızca sana gün gün bir gezi planı hazırlamaktır. Bu cevapları ve oluşan planı kendi sunucularımızda saklamayız; plan yalnızca uygulama açıkken ekranda gösterilir. Not kutusuna kişisel veya hassas bilgi yazmamanı öneririz.</p>
+
+<h2>Hesap ve ayarlar</h2>
+<p>SorGez'de giriş yapman gerekmez. Uygulama her kurulum için anonim bir Firebase Authentication hesabı oluşturur; bu hesap ad, e-posta veya telefon numarası içermez. Seçtiğin dil ve para birimi cihazında saklanır, bir kopyası da bu anonim hesap kimliğiyle birlikte Cloud Firestore'a kaydedilir. Güvenlik kuralları her kullanıcının yalnızca kendi kaydına erişmesine izin verir.</p>
+
+<h2>Uygulama doğrulaması</h2>
+<p>Yapay zekâ hizmetini kötüye kullanıma karşı korumak için Firebase App Check ve Google Play Integrity kullanılır. Bu, isteğin Google Play'den yüklenmiş gerçek SorGez uygulamasından geldiğini doğrular ve cihazla ilgili teknik doğrulama bilgilerini işleyebilir.</p>
+
+<h2>Hizmet sağlayıcılar ve güvenlik</h2>
+<p>Kimlik doğrulama, ayarların saklanması, uygulama doğrulaması ve yapay zekâ için Google Firebase ve Google Gemini kullanılır. Veriler aktarım sırasında HTTPS ile korunur. Firestore veritabanı Frankfurt bölgesindedir; Google'ın diğer hizmetleri farklı ülkelerde veri işleyebilir. Google hizmetleri bağlantı/IP ve teknik güvenlik günlüklerini işleyebilir. Ayrıntılar: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.</p>
+<p>Şu an reklam veya analitik SDK'sı kullanmıyoruz ve kişisel verileri satmıyoruz. Konum, kamera, mikrofon veya rehber izni istemiyoruz. İleride reklam eklenirse bu politika güncellenecektir.</p>
+
+<h2>Saklama ve silme</h2>
+<p>Dil ve para birimi ayarı, uygulamayı kullandığın sürece saklanır. Uygulamayı kaldırmak veya Android ayarlarından uygulama verilerini temizlemek cihazdaki ayarları siler. Firestore'daki ayar kopyasının ve anonim hesabın silinmesini istersen yukarıdaki adrese yazman yeterli; kaydı bulabilmemiz için giriş yapmana gerek yoktur, talebinle birlikte hangi cihazda kullandığını belirtmen işimizi kolaylaştırır. Talepleri en geç 30 gün içinde yerine getiririz.</p>
+
+<h2>Çocuklar</h2>
+<p>SorGez 13 yaşından küçük çocuklara yönelik değildir.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse güncel metin ve tarihi bu sayfada yayımlanır.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>SorGez privacy policy</h1>
+<p class="meta">SorGez · Ogitech Studio · Last updated: 29 September 2026</p>
+
+<h2>Who is responsible?</h2>
+<p>SorGez is made by Ogitech Studio (Oğuzhan Gümüş). For privacy questions and deletion requests: <a href="mailto:oguzhan.gumus.0808@gmail.com">oguzhan.gumus.0808@gmail.com</a>.</p>
+
+<h2>Your trip answers</h2>
+<p>To create a plan, your destination, number of days, optional month of travel, who you travel with, budget, interests and anything you write in the notes field are sent, together with your language and currency, to Google's Gemini model through Firebase AI Logic. The only purpose is to write a day-by-day trip plan for you. We do not store these answers or the plan on our own servers; the plan is only shown on screen while the app is open. Please do not write personal or sensitive information in the notes field.</p>
+
+<h2>Account and settings</h2>
+<p>You do not need to sign in. The app creates an anonymous Firebase Authentication account for each install, with no name, email or phone number. Your chosen language and currency are stored on your device, and a copy is saved in Cloud Firestore under that anonymous account ID. Security rules let each user reach only their own record.</p>
+
+<h2>App verification</h2>
+<p>To protect the AI service from abuse, Firebase App Check and Google Play Integrity are used. They confirm that a request comes from the genuine SorGez app installed from Google Play and may process technical attestation information about the device.</p>
+
+<h2>Service providers and security</h2>
+<p>Google Firebase and Google Gemini are used for authentication, storing settings, app verification and the AI plan. Data is protected in transit with HTTPS. The Firestore database is in the Frankfurt region; other Google services may process data in other countries. Google services may process connection/IP and technical security logs. Details: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
+<p>We currently use no advertising or analytics SDK and do not sell personal data. We do not ask for location, camera, microphone or contacts permissions. If ads are added later, this policy will be updated.</p>
+
+<h2>Retention and deletion</h2>
+<p>Your language and currency setting is kept while you use the app. Uninstalling the app or clearing its data in Android settings removes the settings on your device. To have the settings copy in Firestore and the anonymous account deleted, write to the address above; you do not need to sign in, and mentioning which device you used helps us find the record. We complete requests within 30 days.</p>
+
+<h2>Children</h2>
+<p>SorGez is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the current text and its date will be published on this page.</p>
+</section>
+</main>
+</body>
+</html>
